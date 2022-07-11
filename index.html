@@ -18,12 +18,13 @@
     <header></header>
     <main>
       <section class="container text-center">
-        <div>
-          <h1>00:00:00</h1>
-        </div>
-        <div>
-          <button type="button" class="btn btn-outline-info">Iniciar</button>
-          <button type="button" class="btn btn-outline-warning">Reset</button>
+        <div id="cronometro">
+          <h1 id="tiempo">00:00:00</h1>
+          <button type="button" class="btn btn-outline-info" id="iniciar" onclick="play()">Iniciar</button>
+          <button type="button" class="btn btn-outline-success"
+          id="pausar" onclick="pausar()">Pausar</button>
+          <button type="button" class="btn btn-outline-warning"
+          id="reset" onclick="reset()">Reset</button>
         </div>
       </section>
     </main>
